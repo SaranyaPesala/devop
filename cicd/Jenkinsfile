@@ -3,13 +3,8 @@ agent any
   stages{
     stage('stage:scm'){
       steps{
-        git branch: 'main', changelog: false, poll: false, url: 'https://github.com/SaranyaPesala/devop.git'
+        https://github.com/dstar55/docker-hello-world-spring-boot
       }
     }
-    stage('stage:maven build') {
-      steps {
-       sh 'mvn clean install'
-}
-}
 }
 }
