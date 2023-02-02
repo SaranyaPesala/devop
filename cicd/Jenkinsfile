@@ -1,6 +1,8 @@
 pipeline {
 agent any
-stage('stage:scm'){
+  stages{
+    stage('stage:scm'){
 steps:git branch: 'main', changelog: false, poll: false, url: 'https://github.com/SaranyaPesala/devop.git'
+}
 }
 }
