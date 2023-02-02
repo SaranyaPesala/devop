@@ -3,7 +3,8 @@ agent any
   stages{
     stage('stage:scm'){
       steps{
-        https://github.com/dstar55/docker-hello-world-spring-boot
+        git changelog: false, poll: false, url: 'https://github.com/dstar55/docker-hello-world-spring-boot.git'
       }
     }
+  }
 }
