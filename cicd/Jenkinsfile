@@ -4,8 +4,8 @@ agent any
     stage('stage:scm'){
       steps{
         git branch: 'main', changelog: false, poll: false, url: 'https://github.com/SaranyaPesala/devop.git'
-}
-}
+      }
+    }
     stage('stage:maven build') {
       steps {
        sh 'mvn clean install'
